@@ -1,6 +1,5 @@
-import { NewsPage } from "@/components/NewsPage";
+import { NewsPage } from '@/components/NewsPage';
 
 export default function News() {
-    return <NewsPage />;
-  }
-  
+  return <NewsPage />;
+}

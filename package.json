@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-     "format": "prettier --write \"src/**/*.{js,ts,tsx,css}\"",
-    "format:check": "prettier --check \"src/**/*.{js,ts,tsx,css}\""
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx,css,scss}\"",
+    "format:check": "prettier --check \"src/**/*.{js,ts,tsx,css,scss}\""
   },
   "dependencies": {
     "geist": "^1.3.1",
@@ -18,19 +20,26 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@stylistic/stylelint-plugin": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9",
+    "eslint": "^9.25.1",
     "eslint-config-next": "15.3.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "postcss": "^8.5.3",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
+    "sass": "^1.87.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-scss": "^6.8.0",
     "tailwindcss": "^3.4.10",
-    "typescript": "^5"
+    "typescript": "^5.6.3"
   }
 }

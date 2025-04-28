@@ -12,6 +12,6 @@ export interface Article {
     image?: Image;
     link?: string;
     title?: string;
-  }
+  };
   title: string;
-};
+}
