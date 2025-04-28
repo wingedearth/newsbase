@@ -1,15 +1,15 @@
-export interface Image {
-  title?: string;
+export interface ImageType {
+  title: string;
   url: string;
 }
 
 export interface Article {
   description: string;
-  image?: Image;
+  image?: ImageType;
   link: string;
   pubDate: string;
   source: {
-    image?: Image;
+    image?: ImageType;
     link?: string;
     title?: string;
   };

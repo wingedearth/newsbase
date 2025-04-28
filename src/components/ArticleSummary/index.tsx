@@ -1,4 +1,3 @@
-import { Image } from '../NewsPage/NewsPage.types';
 import { ArticleDescription } from './ArticleDescription';
 import { ArticleSummaryProps } from './ArticleSummary.types';
 import { ArticleSummaryFooterLeft } from './ArticleSummaryFooterLeft';
