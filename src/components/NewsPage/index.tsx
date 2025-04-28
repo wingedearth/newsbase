@@ -34,8 +34,6 @@ const fetchNews = async (): Promise<Article[]> => {
     try {
       const parsedFeed = await parser.parseURL(feed.url);
       const articles = mapParsedFeedToArticles(parsedFeed);
-      console.log('parsedFeed:', parsedFeed);
-      console.log('typeof parsedFeed.items:', typeof parsedFeed.items);
       allArticles.push(...articles);
     } catch (error) {
       console.error(`Failed to fetch ${feed.url}:`, error);
@@ -50,7 +48,6 @@ const fetchNews = async (): Promise<Article[]> => {
 
 export const NewsPage = async () => {
   const articles = await fetchNews();
-  console.log('articles:', articles);
 
   return (
     <main className="news-page min-h-screen bg-gray-100 p-8">
@@ -58,7 +55,7 @@ export const NewsPage = async () => {
         Web Engineering News
       </h1>
       <div className="mx-auto grid max-w-4xl gap-6">
-        {articles.slice(0, 10).map((article, index) => (
+        {articles.slice(0, 20).map((article, index) => (
           <ArticleSummary key={index} article={article} />
         ))}
       </div>
