@@ -53,7 +53,7 @@ export const NewsPage = async () => {
   const articles = await fetchNews();
 
   return (
-    <main className="min-h-screen bg-gray-100 p-8">
+    <main className="news-page min-h-screen bg-gray-100 p-8">
       <h1 className="mb-8 text-center text-4xl font-bold text-blue-600">
         Web Engineering News
       </h1>
